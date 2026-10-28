@@ -1,0 +1,7 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "main-window",
+  "description": "API key management, character list and main character settings for the local main window",
+  "windows": ["main"],
+  "permissions": ["allow-api-key-status", "allow-save-api-key", "allow-delete-api-key", "allow-load-characters", "allow-get-main-character", "allow-set-main-character", "allow-save-managed-characters", "allow-get-dashboard", "allow-refresh-dashboard-card", "allow-get-boss-view", "allow-save-boss-plan", "allow-save-boss-clear", "allow-check-boss-api"]
+}

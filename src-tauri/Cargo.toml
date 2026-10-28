@@ -1,0 +1,24 @@
+[package]
+name = "maple-ledger"
+version = "0.1.0"
+description = "Maple Ledger Windows desktop application"
+edition = "2021"
+
+[lib]
+name = "maple_ledger_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+serde = { version = "1", features = ["derive"] }
+keyring-core = { version = "1.0.1", default-features = false }
+windows-native-keyring-store = { version = "1.1.0", default-features = false }
+zeroize = "1"
+reqwest = { version = "0.13.5", default-features = false, features = ["native-tls-no-alpn"] }
+serde_json = "1"
+tokio = { version = "1", features = ["sync"] }
+rusqlite = { version = "0.41.0", default-features = false, features = ["bundled"] }
+base64 = "0.23"
